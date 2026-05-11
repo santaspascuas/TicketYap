@@ -1,0 +1,48 @@
+# ── Base de datos ─────────────────────────────────────────────
+spring.datasource.url=jdbc:postgresql://localhost:5432/trabajofinal
+spring.datasource.username=postgres
+spring.datasource.password=YOUR_DB_PASSWORD
+
+# ── SMTP Gmail ────────────────────────────────────────────────
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=YOUR_GMAIL_ADDRESS
+spring.mail.password=YOUR_GMAIL_APP_PASSWORD
+
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.properties.mail.smtp.connectiontimeout=5000
+spring.mail.properties.mail.smtp.timeout=5000
+spring.mail.properties.mail.smtp.writetimeout=5000
+
+# ── Stripe ────────────────────────────────────────────────────
+stripe.secret-key=sk_test_YOUR_STRIPE_SECRET_KEY
+
+# ── MinIO ─────────────────────────────────────────────────────
+minio.url=http://localhost:9000
+minio.access-key=minioadmin
+minio.secret-key=minioadmin123
+
+# ── Google OAuth ──────────────────────────────────────────────
+google.client-id=YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com
+
+# ── RSA - Verificación de tickets ─────────────────────────────
+# Genera las claves ejecutando RsaService.generarClavesParaConfig()
+rsa.private-key=
+rsa.public-key=
+
+# ── Ticketmaster API ──────────────────────────────────────────
+ticketmaster.api.key=YOUR_TICKETMASTER_API_KEY
+ticketmaster.tipo-evento-id=1
+
+# ── Spring Batch ──────────────────────────────────────────────
+spring.batch.job.enabled=false
+spring.batch.jdbc.initialize-schema=always
+
+# ── Logging ───────────────────────────────────────────────────
+logging.level.org.springframework=INFO
+logging.level.com.trabajofinal.ticketyap=DEBUG
+logging.level.io.minio=DEBUG
+logging.level.org.apache.http=DEBUG
+logging.level.org.hibernate.SQL=DEBUG

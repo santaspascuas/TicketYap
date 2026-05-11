@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra realizada</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f6f9fc; font-family: Arial, sans-serif;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f6f9fc; padding:20px 0;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px; background-color:white; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+
+                    <tr>
+                        <td align="center" style="padding:30px 20px;">
+                            <h1 style="color:#2c3e50; margin:0;">
+                                ¡Gracias por tu compra en <strong>${empresa}</strong>!
+                            </h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:0 40px;">
+                            <p style="font-size:16px; color:#34495e; line-height:1.6;">
+                                Hola <strong>${email}</strong>,<br><br>
+                                El día <strong>${fecha}</strong> has realizado una compra en nuestra plataforma.
+                            </p>
+
+                            <p style="font-size:16px; color:#34495e; line-height:1.6;">
+                                Tu entrada con ID <strong>${idEntrada}</strong> ha sido generada correctamente.
+                            </p>
+
+                            <p style="text-align:center; margin-top:30px;">
+                                El archivo PDF con tu entrada se adjunta a este correo.
+                            </p>
+
+                            <p style="font-size:14px; color:#95a5a6; text-align:center; margin-top:40px;">
+                                ¡Disfruta del evento!
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background:#2c3e50; color:#bdc3c7; padding:25px; text-align:center; font-size:13px;">
+                            © 2025 TicketYap • Todos los derechos reservados
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
